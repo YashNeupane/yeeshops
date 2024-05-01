@@ -1,0 +1,175 @@
+/* Media queries are a key part of responsive web design (RWD)*/
+/* Media queries are a key part of responsive web design (RWD)*/
+
+/* Media query for screens up to 1400px width */
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        /* Set height of #profile to 83% of viewport height */
+        margin-bottom: 6rem;
+        /* Add margin at the bottom of #profile */
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+        /* Allow flex containers to wrap within .about-containers */
+    }
+
+    #contact,
+    #projects {
+        height: fit-content;
+        /* Set height of #contact and #projects to fit their content */
+    }
+}
+
+/* Media query for screens up to 1200px width */
+@media (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+        /* Hide desktop navigation when screen width is less than 1200px */
+    }
+}
+
+/* Another media query for screens up to 1200px width */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        /* Modify styles for smaller screens */
+        height: auto;
+        /* Set height of #desktop-nav to auto (default height) */
+        /* Example: adjust height */
+        background-color: #93C572;
+        /* Set background color of #desktop-nav */
+    }
+
+    #hamburger-nav {
+        display: flex;
+        /* Display the hamburger navigation */
+    }
+
+
+    #profile,
+    .section-container {
+        display: block;
+        /* Change display to block for #profile and .section-container */
+    }
+
+    .arrow {
+        display: none;
+        /* Hide element with class .arrow */
+    }
+
+    section,
+    .section-container {
+        height: fit-content;
+        /* Set height of section and .section-container to fit their content */
+    }
+
+    section {
+        margin: 0 5%;
+        /* Set left and right margin of section to 5% */
+    }
+
+    .section__pic-container {
+        width: 275px;
+        /* Set width of .section__pic-container to 275px */
+        height: 275px;
+        /* Set height of .section__pic-container to 275px */
+        margin: 0 auto 2rem;
+        /* Set margins around .section__pic-container */
+    }
+
+    .about-containers {
+        margin-top: 0;
+        /* Reset top margin for .about-containers */
+    }
+}
+
+/* Media query for screens up to 600px width */
+@media screen and (max-width: 600px) {
+
+    #contact,
+    footer {
+        height: 40vh;
+        /* Set height of #contact and footer to 40% of viewport height */
+    }
+
+    #profile {
+        height: 83vh;
+        /* Set height of #profile to 83% of viewport height */
+        margin-bottom: 0;
+        /* Remove bottom margin from #profile */
+    }
+
+    article {
+        font-size: 1rem;
+        /* Set font size of articles to 1rem */
+    }
+
+    footer nav {
+        height: fit-content;
+        /* Set height of footer navigation to fit its content */
+        margin-bottom: 2rem;
+        /* Add bottom margin to footer navigation */
+    }
+
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+        /* Allow flex containers to wrap */
+    }
+
+    .contact-info-container {
+        margin: 0;
+        /* Remove margin from .contact-info-container */
+    }
+
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+        /* Set font size of paragraphs and navigation links to 1rem */
+    }
+
+    .experience-sub-title {
+        font-size: 1.25rem;
+        /* Set font size of .experience-sub-title to 1.25rem */
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        /* Set font size of .logo to 1.5rem */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        /* Set flex direction of .nav-links to column */
+        gap: 0.5rem;
+        /* Set gap between elements in .nav-links to 0.5rem */
+        text-align: center;
+        /* Align text in .nav-links to center */
+    }
+
+    .section__pic-container {
+        width: auto;
+        /* Set width of .section__pic-container to auto */
+        height: 46vw;
+        /* Set height of .section__pic-container to 46% of viewport width */
+        justify-content: center;
+        /* Align content of .section__pic-container to center */
+    }
+
+    .section__text__p2 {
+        font-size: 1.25rem;
+        /* Set font size of .section__text__p2 to 1.25rem */
+    }
+
+    .title {
+        font-size: 2rem;
+        /* Set font size of .title to 2rem */
+    }
+
+    .text-container {
+        text-align: justify;
+        /* Justify text within .text-container */
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Neupane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <h1><a href="index.html">Yash Neupane</a></h1>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Books & Articles">Books & Articles</a></li>
+            <li><a href="#Shop">Shop</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Yash Neupane</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links"> <!-- Use <ul> for list -->
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Books & Articles" onclick="toggleMenu()">Books & Articles</a></li>
+                <li><a href="#Shop" onclick="toggleMenu()">Shop</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="Images/profilepic.jpeg" alt="My profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Yash Neupane</h1>
+            <p class="section__text__p2">Certified MF</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('Images/Resume.new copy.pdf')">Download
+                    CV</button>
+                <button class="btn btn-color-1" onclick="window.location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/yashneupane/" target="_blank"><img src="./Images/linkedinpng.jpg"
+                        alt="My LinkedIn profile" class="icon"></a>
+                <a href="https://github.com/yashneupane" target="_blank"><img
+                        src="./Images/GitHub-Mark-ea2971cee799.png" alt="My Github profile" class="icon"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+
+        <p class="section__text__p1">Get to know More</p>
+
+        <div class="wrapper">
+
+            <div class="photoCards">
+                <img src="Images/EC64898D-3F5F-4ED7-9D12-A9D9FF1D9A8F.jpg" alt="littlecar">
+                <div class="info">
+                    <h1>Heading</h1>
+                    <p>This is little Chat</p>
+                    <a href="#" class="butonPhotocards">Read More</a>
+                </div>
+            </div>
+
+
+            <div class="photoCards">
+                <img src="Images/IMG_9642.JPG">
+                <div class="info">
+                    <h1>Heading</h1>
+                    <p>two men</p>
+                    <a href="#" class="butonPhotocards">Read More</a>
+                </div>
+            </div>
+
+
+            <div class="photoCards">
+                <img src="Images/IMG_8787.jpeg">
+                <div class="info">
+                    <h1>Heading</h1>
+                    <p>Three bums</p>
+                    <a href="#" class="butonPhotocards">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
